@@ -1,6 +1,4 @@
 # Hack for LA's Code of Conduct
-[![Slack](http://hackforla-slack.herokuapp.com/badge.svg)](http://hackforla-slack.herokuapp.com)
-
 This document is forked from the [The Code for America Code of Conduct](https://github.com/codeforamerica/codeofconduct).
 
 Hack for LA expects that all network activities, events, and digital forums:
