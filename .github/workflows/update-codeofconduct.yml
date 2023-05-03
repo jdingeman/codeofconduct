@@ -1,0 +1,23 @@
+name: Update Code of Conduct
+
+on:
+  push:
+    paths:
+    - 'README.md'
+
+jobs:
+  update_code_of_conduct:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '12.x'
+      - name: Install dependencies
+        run: npm install
+      - name: Copy code of conduct to other repos
+        env:
+          token: ${{ secrets.HACKFORLA_BOT_PA_TOKEN }}
+        run: node github-actions/update-codeofconduct/update-codeofconduct.js
