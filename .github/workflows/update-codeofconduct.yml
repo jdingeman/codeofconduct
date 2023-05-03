@@ -16,7 +16,9 @@ jobs:
         with:
           node-version: '12.x'
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd github-actions/update-codeofconduct
+          npm install
       - name: Copy code of conduct to other repos
         env:
           token: ${{ secrets.HACKFORLA_BOT_PA_TOKEN }}
