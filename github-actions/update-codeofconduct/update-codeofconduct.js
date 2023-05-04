@@ -5,7 +5,7 @@ const octokit = new Octokit({ auth: token });
 
 // Copies contents of code of conduct source file and creates/updates it in designated repos
 async function updateCodeOfConduct(repos) {
-    const owner = 'hackforla';
+    const owner = 'jdingeman';
     // Gets contents of code of conduct source file
     const codeOfConductSource = await octokit.request(`GET /repos/${owner}/codeofconduct/contents/README.md`);
 
