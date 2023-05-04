@@ -1,6 +1,8 @@
 # Hack for LA's Code of Conduct
 This document is forked from the [The Code for America Code of Conduct](https://github.com/codeforamerica/codeofconduct).
 
+Testing this line 
+
 Hack for LA expects that all network activities, events, and digital forums:
 
 1. Are a safe and respectful environment for all participants.
